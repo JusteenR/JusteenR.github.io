@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie-edge">
+  <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+	<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Monda" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div id="nav">
+    <ul>
+    <li><a href="#placeholder1"><i class="fas fa-home" id="home"></i> Home</a></li>
+		<li><a  href="#about"><i class="fas fa-question-circle"></i> About</a></li>
+    <li><a href="#placeholder3"><i class="fas fa-graduation-cap"></i> Education</a></li>
+    <li><a href="#placeholder4"><i class="fas fa-heart"></i> Interests</a></li>
+    <li><a href="#"><i class="fas fa-phone"></i> Contact Me</a></li>
+    </ul>
+  </div>
+
+	<div id="particles-js"></div>
+
+  <div id="placeholder1">
+		<div id="boo">
+		<h1>Hi There!</h1>
+		<h2>To Learn More About Me Scroll Down</h2>
+		<i class="fas fa-arrow-circle-down" id="downarrow"></i>
+	</div>
+	</div>
+
+	<div id="placeholder2">
+    <div id="about">
+			<br/><br/><br/><br/>
+
+			<div id="grid-container">
+      <div id="myname">Justeen Randev</div>
+			<img src="me.jpg">
+		</div>
+
+		<p>
+		I am currently a third year software engineering student who is passionate about technology. I am always eager to learn new skills and have a chance to explore them by building new things.
+		Right now I am working at CIBC Mellon in the IT department as a summer student where I am learning how technology is integrated in businesses.
+		</p>
+		</div>
+  </div>
+  <div id="placeholder3">
+		<div id="education">
+			<h2>Education</h2>
+			<p>I am currently working towards a bachelor degree in Software Engineering and Management at McMaster University, which is a five year program with CO-OP.
+				At McMaster I am a part of Women in Engineering and the Sumobots Club, while also volunteering at the Ronald McDonald House Charity.
+			</p>
+
+			<img src="student.png">
+		</div>
+
+	</div>
+
+	<div id="placeholder4">
+		<h2><span>My Favourite Books and Movies</span></h2>
+		<div class="grid-container2">
+		  <div class="grid-item" id="one"  onmouseover=appear(0) onmouseout=disappear(0) ><img src="percy.jpg" ><div class="cover"><p>The Percy Jackson Series</p></div></div>
+		  <div class="grid-item" id="two" onmouseover=appear(1) onmouseout=disappear(1) ><img src="vendetta.jpg"><div class="cover"><p>V for Vendetta</p></div></div>
+		  <div class="grid-item" id="three"onmouseover=appear(2) onmouseout=disappear(2) ><img src="dracula.png"><div class="cover"><p>Dracula</p></div></div>
+		  <div class="grid-item" id="five" onmouseover=appear(3) onmouseout=disappear(3) ><img src="harrypotter.jpg"><div class="cover"><p>Harry Potter Series</p></div></div>
+		  <div class="grid-item" id="six" onmouseover=appear(4) onmouseout=disappear(4)><img src="batman.jpg"><div class="cover"><p>The Batman Trilogy</p></div></div>
+		  <div class="grid-item" id="seven" onmouseover=appear(5) onmouseout=disappear(5)><img src="hobbit.jpg"><div class="cover"><p>Lord of the Rings</p></div></div>
+
+		</div>
+	</div>
+
+	<div id="placeholder5">
+		<div id="contact">
+		<h1>Contact Me</h1>
+
+	</div>
+	</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+	particlesJS.load('particles-js', '(Do not change Justeen)particle.json', function() {
+	console.log('json loaded');
+	});
+</script>
+
+<script>
+
+function appear(a) {
+    document.getElementsByClassName('cover')[a].style.display = 'grid';
+}
+
+function disappear(a) {
+    document.getElementsByClassName('cover')[a].style.display = 'none';
+}
+
+
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$().ready(function(){
+  // Add smooth scrolling to all links with a href
+  $('a[href^="#"]').on('click', function(event) {
+
+      // Prevent default scroll
+      event.preventDefault();
+
+      // The id of the anchor element clicked on
+      var hash = this.hash;
+
+      // animate() add smooth page scroll
+      $('body').animate({
+        scrollTop: $(hash).offset().top
+      }, 500);
+  });
+});
+</script>
+
+</body>
+
+</html>

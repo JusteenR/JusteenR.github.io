@@ -1,0 +1,314 @@
+#particles-js{
+  background-color: #EBEBEB;
+  height: 100vh;
+  z-index:-1;
+  width: 100%;
+  position: fixed;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+#nav {
+  margin:0;
+  padding:0;
+  width:100%;
+  height:60px;
+  background-color: black;
+  overflow:hidden;
+  box-sizing: border-box;
+  position: sticky;
+  position:-webkit-sticky;
+  top:0;
+  z-index: 99;
+  box-shadow: 2px 2px 6px grey;
+
+}
+
+#nav ul {
+  list-style:none;
+  box-sizing: border-box;
+  padding:0;
+  text-align: center;
+}
+
+#nav li {
+  display:inline-block;
+  padding-right: 30px;
+  padding-left: 30px;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Monda', sans-serif;
+  color:white;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+a:hover {
+  text-decoration: none;
+
+  color:#51b6d6;
+
+}
+
+#placeholder1 h1 {
+
+  font-family: 'Julius Sans One', sans-serif;
+  line-height: 20vh;
+  font-size: 6vw;
+
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+
+}
+
+#placeholder1  h2 {
+
+  font-family: 'Monda', sans-serif;
+  line-height: 5vh;
+  font-size: 2vw;
+  font-style: italic;
+  margin: 0;
+  text-align: center;
+
+}
+
+
+#boo {
+  z-index: 2;
+  background-color: #ADD8E6;
+  background: radial-gradient(white, #51b6d6);
+  width:50vw;
+  padding: 30px;
+  height: 50vh;
+  display: grid;
+  box-shadow: 0 8px 12px #C0C0C0;
+  position: absolute;
+  top:25vh;
+  left:25vw;
+}
+
+#placeholder1{
+ height: 100vh;
+}
+
+#placeholder2{
+  height: 100vh;
+
+}
+
+#downarrow {
+ margin: auto;
+ font-size: 90px;
+}
+
+#myname {
+  font-size: 3vw;
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: bolder;
+  padding: 20px;
+  margin:auto;
+  border:4px solid #ADD8E6;
+  color:#ADD8E6;
+}
+
+#placeholder2 p {
+  margin: auto;
+  font-size: 1.5vw;
+  font-size:3vh;
+  padding: 30px;
+  text-align: center;
+  font-family: 'Monda', sans-serif;
+}
+
+#about {
+  width: 60vw;
+  margin: auto;
+  background-color: #ADD8E6;
+  padding: 0;
+  height:100%;
+}
+
+#placeholder2 img {
+  display: block;
+  float:right;
+  margin: auto 0 auto auto;
+  height: 30vw;
+  width: 25vw;
+  -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+#grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+#placeholder4 {
+  height: 100vh;
+  background-color: #D0D0D0;
+  background-color: #ADD8E6;
+  width:60%;
+  margin: auto;
+  display: grid;
+
+}
+
+.grid-container2 {
+  margin:auto;
+  display: grid;
+  /* Display as a Grid */
+  grid-template-columns: repeat(3, minmax(180px, 180px));
+  /* repeat = as many times as you can fit */
+  /* auto-fit = fit as many items on the line as possible, go bigger if you need to */
+  /*minmax = (min size, max size) = the minimum size the column should be is 200px, but if there's space then give them all 1fr of that width. */
+  grid-gap: 2px;
+  height:auto;
+  width: auto;
+
+
+  background-color: #ADD8E6;
+
+
+}
+.grid-item {
+  width:180px;
+  position: relative;
+  text-align: center;
+  font-size: 30px;
+  z-index:8;
+/* Centers the image */
+  display:grid;
+  height:auto;
+  padding: 0;
+  overflow: hidden;
+
+}
+
+#one {
+
+}
+
+#placeholder4 img {
+  box-sizing: border-box;
+
+  display: block;
+
+/* Horizontally adjusts grid */
+  width:180px;
+
+/* Centers the image */
+  margin:auto;
+
+/* Vertically fills up the grid item space */
+  height:250px;
+  object-fit:cover;
+
+}
+
+
+
+.cover {
+  box-sizing: border-box;
+display:none;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 5;
+    background-color: rgba(255,255,255, .6);
+
+  /*Makes the words cover the entire grid item*/
+  width: 100%;
+  height: 100%;
+  color: black;
+  font-family: 'Monda', sans-serif;
+  border: 4px solid black;
+  padding: 0;
+
+
+}
+
+.cover p {
+  margin: auto;
+}
+
+#placeholder4 h2 {
+  display: grid;
+  width: 100%;
+  text-align: center;
+  font-family: 'Julius Sans One', sans-serif;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  font-weight: bolder;
+  font-size: 2vw;
+  background-color: rgba(0,0,0,0.8);
+  padding-bottom: 0;
+}
+
+#placeholder4 h2 span {
+  margin: auto;
+  color: #ADD8E6;
+}
+
+#placeholder3 {
+  height: 100vh;
+  background-color: #ADD8E6;
+  width:60%;
+  margin: auto;
+  display: grid;
+
+}
+
+#education {
+  height:90vh;
+  width: 70%;
+  background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
+  margin: auto;
+  margin-top: 70px;
+  overflow: scroll;
+}
+
+#education h2 {
+  text-align: center;
+  font-family: 'Julius Sans One', sans-serif;
+  color: white;
+  margin-top: 60px;
+  font-size: 40px;
+}
+
+#education p {
+  margin: 90px;
+  text-align: center;
+  font-family: 'Monda', sans-serif;
+  color: white;
+  margin-top: 10px;
+}
+
+#placeholder3 img {
+  width:100%;
+  height:40%;
+}
+
+#contact {
+  height: 70vh;
+  width:60vw;
+  background-color: #ADD8E6;
+  margin: auto;
+  font-family: 'Monda', sans-serif;
+  text-align: center;
+}
+
+#placeholder5{
+ height: 100vh;
+ display: grid;
+}
