@@ -2,7 +2,7 @@
   background-color: #EBEBEB;
   height: 100vh;
   z-index:-1;
-  width: 100%;
+  width: 100vw;
   position: fixed;
 }
 
@@ -34,10 +34,11 @@ body, html {
   text-align: center;
 }
 
+
 #nav li {
   display:inline-block;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
   text-transform: uppercase;
 }
 
@@ -49,12 +50,61 @@ a {
   font-weight: normal;
 }
 
+#nav #Justeen {
+  display:none;
+  text-decoration: none;
+  font-family: 'Monda', sans-serif;
+  color:white;
+}
+
+.fas.fa-bars{
+  position: absolute;
+  top:20px;
+  left: 20px;
+}
+
 a:hover {
   text-decoration: none;
 
   color:#51b6d6;
 
 }
+
+.side-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 98;
+  top: 0;
+  left: 0;
+  background-color: rgba(255,255,255,0.8);
+  opacity: 0.9;
+  overflow-x: hidden;
+  padding-top: 80px;
+  transition: 0.5s;
+}
+
+.side-nav a{
+  font-family: 'Monda', sans-serif;
+  display: block;
+  text-decoration: none;
+  padding: 20px 10px 0 10px;
+  color: black;
+  font-size: 15px;
+}
+
+.close {
+  position: absolute;
+  top: 50px;
+  right: 15px;
+  font-size: 60px;
+  transition: 0.2s;
+}
+
+.side-nav a:hover{
+  color: grey;
+}
+
 
 #placeholder1 h1 {
 
@@ -84,14 +134,14 @@ a:hover {
   z-index: 2;
   background-color: #ADD8E6;
   background: radial-gradient(white, #51b6d6);
-  width:50vw;
+  width:50%;
   padding: 30px;
-  height: 50vh;
+  height: 50%;
   display: grid;
   box-shadow: 0 8px 12px #C0C0C0;
   position: absolute;
-  top:25vh;
-  left:25vw;
+  top:30%;
+  left:25%;
 }
 
 #placeholder1{
@@ -100,6 +150,7 @@ a:hover {
 
 #placeholder2{
   height: 100vh;
+  display: grid;
 
 }
 
@@ -270,12 +321,13 @@ display:none;
 }
 
 #education {
-  height:90vh;
-  width: 70%;
+  height:90%;
+  width: 80%;
   background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
   margin: auto;
-  margin-top: 70px;
-  overflow: scroll;
+  margin-top: 20px;
+  display: grid;
+  overflow: hidden;
 }
 
 #education h2 {
@@ -287,16 +339,18 @@ display:none;
 }
 
 #education p {
-  margin: 90px;
+  margin: 60px;
   text-align: center;
   font-family: 'Monda', sans-serif;
   color: white;
   margin-top: 10px;
+  font-size: 20px;
 }
 
 #placeholder3 img {
   width:100%;
-  height:40%;
+  margin: auto;
+  object-fit: cover;
 }
 
 #contact {
@@ -306,9 +360,97 @@ display:none;
   margin: auto;
   font-family: 'Monda', sans-serif;
   text-align: center;
+  display: grid;
+  padding: 0;
+  border: 1px solid rgba(0,0,0,0.8);
 }
 
 #placeholder5{
  height: 100vh;
  display: grid;
+}
+
+#icons {
+  margin: auto;
+  background-color: pink;
+  height: auto;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.fab {
+  color: #d6dbe0;
+  padding: 0;
+  margin: 20px;
+  font-size: 8vw;
+}
+
+#placeholder5 h1 {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  height:50px;
+  margin: 0;
+  text-align: center;
+  padding: 50px;
+
+}
+
+#centerID {
+  position: absolute;
+  height: 70vh;
+  width:60vw;
+  margin: auto;
+  font-family: 'Monda', sans-serif;
+  text-align: center;
+  display: grid;
+  padding: 0;
+}
+
+#facebook a:hover{
+  color:#3B5998;
+}
+
+@media only screen and (max-width: 900px) {
+    html, body, #placeholder1, #boo, #about, #placeholder3, #placeholder4  {
+        width: 100%;
+        left:0;
+    }
+
+    #boo{
+      margin: 0;
+      padding: 0;
+    }
+
+    #about {
+      background-color: rgba(173,216,230,0.3);
+      margin: auto;
+    }
+    #education {
+      width:100%;
+      background: linear-gradient(rgba(173,216,230,0.3), rgba(173,216,230,0.3));
+    }
+    #placeholder3{
+      background-color: rgba(173,216,230,0.3);
+    }
+
+    #education p, #education h2 {
+      color: black;
+    }
+
+    #placeholder4 {
+      background-color: rgba(173,216,230,0.3);
+    }
+
+    #nav-options{
+      display: none;
+    }
+
+    #nav #Justeen {
+      display: inline-block;
+      font-size: 20px;
+    }
+
 }
