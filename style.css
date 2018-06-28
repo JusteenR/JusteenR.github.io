@@ -415,6 +415,7 @@ display:none;
 
 #main{
   transition: 0.5s;
+  -webkit-transition: 0.5s;
   padding: 0;
 
 
