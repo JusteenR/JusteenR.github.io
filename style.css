@@ -109,11 +109,11 @@ a:hover {
 #placeholder1 h1 {
 
   font-family: 'Julius Sans One', sans-serif;
-  line-height: 20vh;
-  font-size: 6vw;
 
+  font-size: 50px;
   font-weight: bold;
   margin: 0;
+
   text-align: center;
 
 }
@@ -121,8 +121,8 @@ a:hover {
 #placeholder1  h2 {
 
   font-family: 'Monda', sans-serif;
-  line-height: 5vh;
-  font-size: 2vw;
+
+  font-size: 30px;
   font-style: italic;
   margin: 0;
   text-align: center;
@@ -135,13 +135,13 @@ a:hover {
   background-color: #ADD8E6;
   background: radial-gradient(white, #51b6d6);
   width:50%;
-  padding: 30px;
-  height: 50%;
+  padding: 50px;
   display: grid;
   box-shadow: 0 8px 12px #C0C0C0;
   position: absolute;
-  top:30%;
+  top:25%;
   left:25%;
+
 }
 
 #placeholder1{
@@ -157,6 +157,7 @@ a:hover {
 #downarrow {
  margin: auto;
  font-size: 90px;
+
 }
 
 #myname {
@@ -421,16 +422,28 @@ display:none;
 
 }
 
+#top {
+  display: none;
+}
+
 @media only screen and (max-width: 900px) {
     html, body, #placeholder1, #boo, #about, #placeholder3, #placeholder4  {
         width: 100%;
         left:0;
+
     }
 
-    #boo{
-      margin: 0;
-      padding: 0;
+    #placeholder1{
+      display: grid;
     }
+
+    #boo {
+
+      box-sizing: border-box;
+  width: 100vw;
+    }
+
+
 
     #about {
       background-color: rgba(173,216,230,0.3);

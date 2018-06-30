@@ -1,0 +1,231 @@
+#particles-js{
+  background-color: #EBEBEB;
+  height: 100vh;
+  z-index:-1;
+  width: 100vw;
+  position: fixed;
+}
+
+#top {
+  display: none;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+#nav-options{
+  display: none;
+}
+
+#nav #Justeen {
+  display: inline-block;
+  font-size: 20px;
+  font-family: 'Monda', sans-serif;
+  color:white;
+}
+
+#nav {
+  margin:0;
+  padding:0;
+  width:100%;
+  height:60px;
+  background-color: black;
+  overflow:hidden;
+  box-sizing: border-box;
+  position: sticky;
+  position:-webkit-sticky;
+  top:0;
+  z-index: 99;
+  box-shadow: 2px 2px 6px grey;
+  float: left;
+
+}
+
+#nav ul {
+  list-style:none;
+  box-sizing: border-box;
+  padding:0;
+  text-align: center;
+}
+
+
+#nav li {
+  display:inline-block;
+  padding-right: 20px;
+  padding-left: 20px;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Monda', sans-serif;
+  color:white;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.fas.fa-bars{
+  position: absolute;
+  top:20px;
+  left: 20px;
+}
+
+a:hover {
+  text-decoration: none;
+
+  color:#51b6d6;
+
+}
+
+.side-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 98;
+  top: 0;
+  left: 0;
+  background-color: rgba(255,255,255,0.8);
+  opacity: 0.9;
+  overflow-x: hidden;
+  padding-top: 80px;
+  transition: 0.5s;
+}
+
+.side-nav a{
+  font-family: 'Monda', sans-serif;
+  display: block;
+  text-decoration: none;
+  padding: 20px 10px 0 10px;
+  color: black;
+  font-size: 15px;
+}
+
+.close {
+  position: absolute;
+  top: 50px;
+  right: 15px;
+  font-size: 60px;
+  transition: 0.2s;
+}
+
+.side-nav a:hover{
+  color: grey;
+}
+
+#placeholder1{
+  top:0;
+  height: 100vh;
+  display: grid;
+  width: 100vw;
+}
+
+#boo {
+  text-align: center;
+  font-family: 'Monda', sans-serif;
+  background-color: rgba(0,0,0,0.5);
+  width: 100%;
+
+  font-size: 80%;
+  padding: 10%;
+  box-sizing: border-box;
+  color:white;
+  position: absolute;
+  top:30vh;
+
+}
+
+#boo h1 {
+  font-size: 240%;
+  font-family: 'Julius Sans One', sans-serif;
+  padding: 0;
+  margin: 0;
+
+}
+
+#boo h2 {
+  margin: 0;
+}
+
+#downarrow {
+ font-size: 500%;
+ padding: 0;
+ margin: 0;
+}
+
+#placeholder2 img {
+  width:35vw;
+  height: 45vw;
+  border-radius: 50%;
+}
+
+#placeholder2{
+  height:100vh;
+
+}
+
+#small-about{
+  display: grid;
+  height: 92vh;
+  font-family: 'Monda', sans-serif;
+}
+
+#smaller-about {
+  padding: 0;
+  display: block;
+  margin:auto;
+  text-align: center;
+}
+
+#myname {
+  font-size: 8vw;
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: bolder;
+  padding: 20px;
+  background-color: rgba(0,0,0,0.5);
+  margin-bottom: 20px;
+}
+
+#placeholder3 {
+  height: 100vh;
+  display: grid;
+  padding: 0;
+  margin:0;
+  width: 100vw;
+
+}
+
+#education {
+  margin: auto;
+  background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
+  display: grid;
+  box-sizing: border-box;
+  position: absolute;
+
+}
+
+#education h2 {
+  font-family: 'Julius Sans One', sans-serif;
+  color: white;
+  margin-top: 18%;
+  text-align: center;
+  font-size: 5vw;
+  margin-bottom: 0;
+
+
+}
+
+#education p {
+  font-family: 'Monda', sans-serif;
+  color: white;
+  font-size: 3vw;
+  padding: 10px;
+  text-align: center;
+}
+
+#placeholder3 img {
+  width: 100%;
+  margin: auto;
+  object-fit: cover;
+}
