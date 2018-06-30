@@ -57,7 +57,7 @@
 
 	<div id="placeholder2">
     <div id="about">
-			<br/><br/><br/><br/>
+
 
 		<div id="small-about">
 			<div id="smaller-about">
@@ -88,6 +88,8 @@
 
 	<div id="placeholder4">
 		<h2><span>My Favourite Books and Movies</span></h2>
+
+		<h2>My Favourite Books and Movies</h2>
 
 		<div class="slideshow-container">
 
@@ -199,7 +201,9 @@ $().ready(function(){
 
 <script>
 var slideNum = 1;
-showSlide(slideNum);
+if ($(window).width() < 600) {
+	showSlide(slideNum);
+}
 
 function plusSlides(n) {
   showSlide(slideNum += n);

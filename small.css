@@ -253,8 +253,8 @@ a:hover {
 
 .slideshow-container {
   position: relative;
-  width:40vw;
-  height: 55vw;
+  width:60vw;
+  height: 75vw;
 
   margin: 0 auto auto auto;
 }
@@ -272,18 +272,11 @@ a:hover {
   transition: 0.5s ease;
 }
 
-#placeholder4 h2 {
-  width: auto;
-  height: 20px;
-  text-align: center;
-  font-family: 'Julius Sans One', sans-serif;
-  font-weight: bolder;
-  font-size: 4vw;
-  background-color: rgba(0,0,0,0.8);
-  color: white;
-  padding: 10px;
-  margin-top: 90px;
+#placeholder4 h2 span{
+  display:none;
+
 }
+
 
 .next {
   right: 0;
@@ -324,6 +317,66 @@ a:hover {
 }
 
 #placeholder4 img {
-  width:40vw;
-  height: 55vw;
+  width:60vw;
+  height: 75vw;
+}
+
+#contact {
+  height: 70vh;
+  width:100vw;
+  background-color: #ADD8E6;
+  margin: auto;
+  font-family: 'Monda', sans-serif;
+  text-align: center;
+  display: grid;
+  padding: 0;
+  border: 1px solid rgba(0,0,0,0.8);
+}
+
+#placeholder5{
+ height: 100vh;
+ display: grid;
+}
+
+#icons {
+  margin: auto;
+  background-color: pink;
+  height: auto;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.fab {
+  color: #d6dbe0;
+  padding: 0;
+  margin: 20px;
+  font-size: 8vw;
+}
+
+#placeholder5 h1 {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  height:50px;
+  margin: 0;
+  text-align: center;
+  padding: 50px;
+
+}
+
+#centerID {
+  position: absolute;
+  height: 70vh;
+  width:100%;
+  margin: auto;
+  font-family: 'Monda', sans-serif;
+  text-align: center;
+  display: grid;
+  padding: 0;
+}
+
+#facebook a:hover{
+  color:#3B5998;
 }

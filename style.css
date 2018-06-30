@@ -430,6 +430,7 @@ display:none;
   display: none;
 }
 
+
 @media only screen and (max-width: 900px) {
     html, body, #placeholder1, #boo, #about, #placeholder3, #placeholder4  {
         width: 100%;
