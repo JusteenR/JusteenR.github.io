@@ -169,6 +169,8 @@ a:hover {
   display: grid;
   height: 92vh;
   font-family: 'Monda', sans-serif;
+  font-size: 3.2vw;
+  padding: 10px;
 }
 
 #smaller-about {
