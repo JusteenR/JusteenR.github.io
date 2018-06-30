@@ -119,6 +119,7 @@ a:hover {
   height: 100vh;
   display: grid;
   width: 100vw;
+  background-color: rgba(0,0,0,0);
 }
 
 #boo {
