@@ -172,7 +172,7 @@ a:hover {
   display: grid;
   height: 92vh;
   font-family: 'Monda', sans-serif;
-  font-size: 3.2vw;
+  font-size: 3vw;
   padding: 10px;
 }
 
@@ -207,6 +207,7 @@ a:hover {
   display: grid;
   box-sizing: border-box;
   position: absolute;
+  height: 100%;
 
 }
 
@@ -233,4 +234,96 @@ a:hover {
   width: 100%;
   margin: auto;
   object-fit: cover;
+}
+
+#placeholder4{
+  height: 100vh;
+  display: grid;
+  margin: 0;
+}
+
+
+.grid-container2 {
+  display: none;
+}
+
+.slide{
+  display: none;
+}
+
+.slideshow-container {
+  position: relative;
+  width:40vw;
+  height: 55vw;
+
+  margin: 0 auto auto auto;
+}
+
+.prev, .next {
+  z-index: 9;
+  cursor: pointer;
+  position: absolute;
+  top: 42%;
+  width: auto;
+  padding: 14px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.5s ease;
+}
+
+#placeholder4 h2 {
+  width: auto;
+  height: 20px;
+  text-align: center;
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: bolder;
+  font-size: 4vw;
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+  padding: 10px;
+  margin-top: 90px;
+}
+
+.next {
+  right: 0;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.6);
+}
+
+.title {
+  color: white;
+  font-family: 'Monda', sans-serif;
+  font-size: 13px;
+  padding: 8px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0,0,0,0.7);
+  box-sizing: border-box;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+#placeholder4 img {
+  width:40vw;
+  height: 55vw;
 }
