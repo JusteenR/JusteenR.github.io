@@ -143,13 +143,13 @@ a:hover {
   font-family: 'Monda', sans-serif;
   background-color: rgba(0,0,0,0.5);
   width: 100%;
-  height:40%;
+  height:min-content;
   font-size: 80%;
   padding: 10%;
   box-sizing: border-box;
   color:white;
   position: relative;
-  top:30vh;
+  top:25vh;
 
 }
 
