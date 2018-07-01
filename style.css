@@ -1,3 +1,4 @@
+
 #particles-js{
   background-color: #EBEBEB;
   height: 100vh;
@@ -134,13 +135,14 @@ a:hover {
   z-index: 2;
   background-color: #ADD8E6;
   background: radial-gradient(white, #51b6d6);
-  width:50%;
+  width:60%;
   padding: 50px;
   display: grid;
   box-shadow: 0 8px 12px #C0C0C0;
   position: absolute;
   top:25%;
-  left:25%;
+  left:20%;
+  box-sizing: border-box;
 
 }
 
@@ -182,6 +184,7 @@ a:hover {
 #about {
   width: 60vw;
   margin: auto;
+  margin-top: 3%;
   background-color: #ADD8E6;
   padding: 0;
   height:100%;
@@ -324,7 +327,7 @@ display:none;
 }
 
 #education {
-  height:90%;
+  height:100%;
   width: 80%;
   background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
   margin: auto;
@@ -342,11 +345,9 @@ display:none;
 }
 
 #education p {
-  margin: 60px;
   text-align: center;
   font-family: 'Monda', sans-serif;
   color: white;
-  margin-top: 10px;
   font-size: 20px;
 }
 
@@ -375,16 +376,15 @@ display:none;
 
 #icons {
   margin: auto;
-  background-color: pink;
   height: auto;
   padding: 0;
   text-align: center;
   width: 100%;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,1);
 }
 
 .fab {
-  color: #d6dbe0;
+  color: grey;
   padding: 0;
   margin: 20px;
   font-size: 8vw;
@@ -412,8 +412,20 @@ display:none;
   padding: 0;
 }
 
-#facebook a:hover{
+#icons .fa-facebook-square:hover{
   color:#3B5998;
+}
+
+#icons .fa-instagram:hover{
+  color: #dc2743;
+}
+
+#icons .fa-github:hover{
+  color: white;
+}
+
+#icons .fa-linkedin:hover{
+  color: #007bb6;
 }
 
 #main{

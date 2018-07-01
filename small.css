@@ -2,10 +2,21 @@
   background-color: #EBEBEB;
   height: 100vh;
   z-index:-1;
-  width: 100vw;
+  width: 100%;
   position: fixed;
   /* Issues on phone */
   display: none;
+}
+
+#backdrop{
+  height: 100vh;
+  width:100%;
+  z-index:-5;
+  position: fixed;
+  background-image: url("backdrop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 #top {
@@ -120,7 +131,7 @@ a:hover {
   top:0;
   height: 100vh;
   display: grid;
-  width: 100vw;
+  width: 100%;
   background-color: rgba(0,0,0,0);
 }
 
@@ -174,13 +185,16 @@ a:hover {
   font-family: 'Monda', sans-serif;
   font-size: 3vw;
   padding: 10px;
+
 }
 
 #smaller-about {
   padding: 0;
   display: block;
   margin:auto;
+  margin-top:20%;
   text-align: center;
+
 }
 
 #myname {
@@ -197,7 +211,7 @@ a:hover {
   display: grid;
   padding: 0;
   margin:0;
-  width: 100vw;
+  width: 100%;
 
 }
 
@@ -209,14 +223,17 @@ a:hover {
   position: absolute;
   height: 100%;
 
+
 }
 
 #education h2 {
   font-family: 'Julius Sans One', sans-serif;
   color: white;
-  margin-top: 18%;
+  margin-top: 20%;
   text-align: center;
-  font-size: 5vw;
+  font-size: 6vw;
+  box-sizing: border-box;
+  padding: 0;
   margin-bottom: 0;
 
 
@@ -266,7 +283,8 @@ a:hover {
   top: 42%;
   width: auto;
   padding: 14px;
-  color: black;
+  color: white;
+  text-shadow: 0 0 8px black;
   font-weight: bold;
   font-size: 18px;
   transition: 0.5s ease;
@@ -329,62 +347,32 @@ a:hover {
   height: 75vw;
 }
 
-#contact {
-  height: 70vh;
-  width:100vw;
-  background-color: #ADD8E6;
-  margin: auto;
-  font-family: 'Monda', sans-serif;
-  text-align: center;
+#placeholder5 {
+  height: 100vh;
+  width:100%;
   display: grid;
-  padding: 0;
-  border: 1px solid rgba(0,0,0,0.8);
-}
-
-#placeholder5{
- height: 100vh;
- display: grid;
-}
-
-#icons {
-  margin: auto;
-  background-color: pink;
-  height: auto;
-  padding: 0;
-  text-align: center;
-  width: 100%;
-  background-color: rgba(0,0,0,0.8);
-}
-
-.fab {
-  color: #d6dbe0;
-  padding: 0;
-  margin: 20px;
-  font-size: 8vw;
 }
 
 #placeholder5 h1 {
-  font-family: 'Julius Sans One', sans-serif;
-  font-size: 50px;
-  font-weight: bold;
-  height:50px;
-  margin: 0;
-  text-align: center;
-  padding: 50px;
-
+  display: none;
 }
 
-#centerID {
-  position: absolute;
-  height: 70vh;
-  width:100%;
+#contact{
   margin: auto;
-  font-family: 'Monda', sans-serif;
-  text-align: center;
-  display: grid;
-  padding: 0;
 }
 
-#facebook a:hover{
-  color:#3B5998;
+#icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10vh;
+}
+
+#placeholder5 i {
+  font-size: 20vh;
+  color: silver;
+}
+
+#icons .fab:hover{
+  color: black;
 }
