@@ -190,6 +190,7 @@ a:hover {
   margin-top: 3%;
   background-color: #ADD8E6;
   padding: 0;
+  padding-top: 60px;
   height:100%;
 }
 
@@ -225,9 +226,6 @@ clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
   display: grid;
   /* Display as a Grid */
   grid-template-columns: repeat(3, minmax(180px, 180px));
-  /* repeat = as many times as you can fit */
-  /* auto-fit = fit as many items on the line as possible, go bigger if you need to */
-  /*minmax = (min size, max size) = the minimum size the column should be is 200px, but if there's space then give them all 1fr of that width. */
   grid-gap: 2px;
   height:auto;
   width: auto;
@@ -352,6 +350,7 @@ display:none;
   font-family: 'Monda', sans-serif;
   color: white;
   font-size: 20px;
+  padding: 10px;
 }
 
 #placeholder3 img {

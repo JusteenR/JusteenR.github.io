@@ -179,6 +179,7 @@ a:hover {
 
 #placeholder2{
   height:100vh;
+  color: white;
 
 }
 
@@ -207,6 +208,7 @@ a:hover {
   padding: 20px;
   background-color: rgba(0,0,0,0.5);
   margin-bottom: 20px;
+  color: white;
 }
 
 #placeholder3 {
