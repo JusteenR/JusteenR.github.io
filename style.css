@@ -3,7 +3,7 @@
   background-color: #EBEBEB;
   height: 100vh;
   z-index:-1;
-  width: 100vw;
+  width: 100%;
   position: fixed;
 }
 
@@ -33,6 +33,7 @@ body, html {
   box-sizing: border-box;
   padding:0;
   text-align: center;
+  z-index: 9999;
 }
 
 
@@ -41,6 +42,7 @@ body, html {
   padding-right: 20px;
   padding-left: 20px;
   text-transform: uppercase;
+  z-index: 9999;
 }
 
 a {
@@ -49,6 +51,7 @@ a {
   color:white;
   font-size: 20px;
   font-weight: normal;
+  z-index: 9999;
 }
 
 #nav #Justeen {
@@ -437,7 +440,7 @@ display:none;
 }
 
 #top {
-  display: none;
+  
 }
 
 .slideshow-container {
@@ -459,7 +462,7 @@ display:none;
     #boo {
 
       box-sizing: border-box;
-  width: 100vw;
+  width: 100%;
     }
 
 

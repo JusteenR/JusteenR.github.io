@@ -1,20 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie-edge">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
 	<link rel="stylesheet" media="(max-width: 600px)" href="small.css" /> <!-- Switch to 480 and 481 after -->
   <link rel="stylesheet" media="(min-width: 601px)" href="style.css" />
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
 	<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Monda" rel="stylesheet">
 
+	<title>Justeen</title>
+
 </head>
 
 <body>
-<span id="top">hi</span>
+
+	<div id="top"></div>
 
   <div id="nav">
     <ul>
@@ -40,8 +43,8 @@
   </div>
 
 	<div id="particles-js"></div>
-
 	<div id="backdrop"></div>
+
   <div id="main">
 
   <div id="placeholder1">
@@ -178,6 +181,8 @@ function disappear(a) {
 </script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
 <script>
 $().ready(function(){
   // Add smooth scrolling to all links with a href
@@ -190,12 +195,13 @@ $().ready(function(){
       var hash = this.hash;
 
       // animate() add smooth page scroll
-      $('body').animate({
+      $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 500);
   });
 });
 </script>
+
 
 <script>
   function openSlide(){
