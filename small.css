@@ -10,9 +10,12 @@
 
 #backdrop{
   height: 100vh;
-  width:100%;
+  width:100vw;
   z-index:-5;
   position: fixed;
+  display: absolute;
+  top:0;
+  left:0;
   background-image: url("backdrop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
