@@ -134,7 +134,7 @@ a:hover {
 }
 
 
-#boo {
+#intro {
   z-index: 2;
   background-color: #ADD8E6;
   background: radial-gradient(white, #51b6d6);
@@ -444,7 +444,7 @@ display:none;
 
 
 @media only screen and (max-width: 900px) {
-    html, body, #placeholder1, #boo, #about, #placeholder3, #placeholder4  {
+    html, body, #placeholder1, #intro, #about, #placeholder3, #placeholder4  {
         width: 100%;
         left:0;
 
@@ -454,7 +454,7 @@ display:none;
       display: grid;
     }
 
-    #boo {
+    #intro {
 
       box-sizing: border-box;
   width: 100%;
